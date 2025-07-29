@@ -382,6 +382,10 @@ footer {
     font-size: 35px;
   }
 
+  .nav-links {
+  width: calc(100% - 20px);  /* 画面いっぱいにならず10px左右の余白 */
+max-width: 300px;           /* デスクトップで開いたとき用に制限 */
+}
   .hero-content h1 {
     font-size: 40px;
     margin-top: 20px;
