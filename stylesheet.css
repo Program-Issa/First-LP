@@ -369,3 +369,129 @@ footer {
   font-size: 0.9rem;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 1.3rem;
+    padding: 15px;
+    line-height: 1.5;
+  }
+
+  .hamburger {
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .benefit-content p {
+    font-size: 18px;
+    padding: 0 20px 40px;
+  }
+
+  .benefit-coding {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .introduction1 {
+    font-size: 16px;
+    padding: 15px;
+    width: 80%;
+  }
+
+  .section-title h1 {
+    font-size: 32px;
+  }
+
+  .section-title p {
+    font-size: 12px;
+  }
+
+  .profile-content2 h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .profile-content2 p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .profile-content2 a {
+    font-size: 18px;
+    width: 80%;
+    padding: 15px 0;
+  }
+
+  .my-face {
+    width: 100%;
+    height: auto;
+  }
+
+  .flow-content {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .in-production1 h1 {
+    font-size: 28px;
+    padding-top: 50px;
+  }
+
+  .in-production1 p {
+    font-size: 14px;
+    padding: 0 15px 40px;
+  }
+
+  .in-production-content li {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .inquiry-content {
+    margin-top: 60px;
+  }
+
+  .line {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .vision-title h1 {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+
+  .vision-title p {
+    font-size: 24px;
+  }
+
+  .vision-page h2 {
+    font-size: 24px;
+  }
+
+  .vision-page p {
+    font-size: 14px;
+    padding: 0 15px 40px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+
+  .irast {
+    max-width: 80%;
+  }
+}
