@@ -1,0 +1,371 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+   background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  position: fixed;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: none;
+  flex-direction:column;
+  background-color:rgba(0, 0, 0, 0.9);
+  position:absolute;
+  top:60px;
+  right:10px;
+  padding:10px;
+  border-radius:8px;
+  z-index:999;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  transform: translateX(-3ch);
+}
+
+.nav-links a:hover {
+  color: #00f0ff;
+}
+.nav-links.active {
+  display: flex;
+}
+
+.hamburger {
+  position: fixed; /* または fixed */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 3px;
+}
+
+/* ヒーローセクション */
+.hero-content img {
+  width: 100%;        /* 親要素の横幅にフィットさせる */
+  height: auto;       /* アスペクト比を保ったまま自動調整 */
+  max-height: 400px;  /* 上限高さを設定（好みで調整） */
+  object-fit: contain; /* 全体を収める（切れないように） */
+  display: block;
+  margin: 0 auto; 
+}
+
+.hero-content h1  {
+  color: #00c8ff;
+  font-size:80px;
+  justify-content: flex-start;
+  margin-top: 10px;
+  text-align: center; 
+}
+.hero-content p    {
+  color:white;
+  text-align: center;
+} 
+
+.benefit {
+  padding:10px auto;
+}
+
+.benefit-content p {
+font-size:30px;
+padding-bottom:80px;
+}
+
+.benefit-coding  {
+  text-align: center;
+  background-color: #666;
+  color:#00c8ff;
+  font-size:30px;
+}
+
+.introduction {
+  text-align: center;
+  margin-bottom: 60px;
+  
+}
+
+.introduction p {
+  padding-top:40px;
+  padding-bottom:50px;
+  text-align: center;
+}
+
+.introduction1 {
+  padding: 20px 20px;
+  background-color:rgb(255, 192, 231);
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 8px 8px rgba(255, 255, 255, 0.899);
+}
+
+.introduction1:hover {
+box-shadow:none;
+position:relative;
+top:7px;
+}
+
+/* 各セクション共通 */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* 表示時：透明を解除＆元の位置へ */
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+  
+.section-title h1 {
+  padding-bottom: 20px 0 3px 0;
+  margin-bottom:3px;
+  font-size:60px;
+  color:#ffcc00;
+}
+.section-title p {
+  color:#ffcc00;
+  padding-bottom: 20px;
+  margin:0 0;
+  font-size:15px;
+}
+
+.profile-content {
+padding-top: 80px;
+
+}
+
+.profile-content2 {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 70px;
+}
+
+.profile-content2 h2 {
+  margin:0;
+  padding-bottom: 60px;
+  font-size:60px;
+}
+
+.profile-content2 p {
+  margin-bottom: 70px;
+}
+
+.profile-content2 a {
+ display:inline-block;
+  padding: 20px 0;
+  background:linear-gradient(135deg, #db0071, #e0ded7);
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;         /* 角をちょい丸く（0にすれば完全な四角） */
+  font-weight: bold;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+  width:50%;
+  font-size: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 8px rgba(255, 255, 255, 0.9);  
+}
+
+
+
+.profile-content2 a:hover {
+  box-shadow:none;
+position:relative;
+top:7px;
+}
+
+.my-face {
+  height:800px;
+  width:650px;
+}
+
+
+.title h1,
+.title p {
+  color: #00c8ff;
+  text-align: center;
+}
+
+.benefit span {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.irast {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+
+
+.my-profile {
+  background-color: #111;
+}
+
+
+
+.flow, .inquiry, .vision-page {
+  background-color: #111;
+}
+
+.lp-flow {
+  padding-top:50px;
+}
+
+.flow-content {
+  background-color: #222;
+  padding: 10px;
+  border-left: 5px solid #00c8ff;
+  margin: 20px 0;
+  text-align: center;
+  font-size:25px;
+}
+
+.flow-content p {
+  float: left;
+  padding-bottom: 15px;
+}
+
+.in-production1 h1 {
+padding-top:80px;
+}
+
+.in-production1 p {
+  padding-bottom:60px;
+}
+
+.in-production-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 120px;
+}
+
+.in-production-content li  {
+  padding-bottom:40px;
+}
+
+
+
+  .in-production-content li::before {
+  content: '✔';
+  color: #00c8ff;
+  margin-right: 10px;
+}
+
+.inquiry-content  {
+  text-align: center;
+  margin-top:100px;
+}
+
+.line {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00ff48;
+  color: #000000;
+  font-size:25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 80px;
+  height:80px;
+  width:30%;
+  box-shadow: 0 8px 8px rgba(255, 255, 255, 0.9);
+}
+
+.line:hover {
+  box-shadow: none;
+  position:relative;
+  top:8px;
+}
+
+
+.vision-title  {
+  padding: 60px 20px;
+  color: white; /* または #00f など青にしたければ */
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+   red,
+    orange,
+    yellow,
+    green,
+    rgb(0, 255, 255),
+    rgb(244, 188, 4),
+    rgb(231, 25, 25)
+  ); 
+  -webkit-background-clip: text; /* 背景を文字で切り抜く */
+  -webkit-text-fill-color: transparent; /* 文字の色を透明にする */
+  background-clip: text;
+}
+
+
+.vision-title h1 {
+  text-align: center;
+  font-size:100px;
+  margin-top:150px;
+}
+
+.vision-title p {
+  text-align:center;
+  font-size:80px;
+}
+
+.vision-page h2 {
+  text-align: center;
+  color:#00ff48;
+  font-size:35px;
+  padding-bottom: 50px;
+}
+
+.vision-page p {
+  padding-bottom: 50px;
+}
+
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
