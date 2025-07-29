@@ -21,15 +21,13 @@ header {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
+  font-size: 1.8rem;
+  line-height:2.0;
   top: 0;
   z-index: 999;
   position: fixed;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 .nav-links {
   display: none;
@@ -58,19 +56,21 @@ header {
   display: flex;
 }
 
-.hamburger {
+.hamburger  {
   position: fixed; /* または fixed */
   top: 20px;
-  right: 20px;
+  right: 40px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   z-index: 1000;
+  font-size:50px;
+
 }
 
 .hamburger span {
   width: 25px;
-  height: 3px;
+  height: 5px;
   background: #fff;
   margin: 4px 0;
   border-radius: 3px;
