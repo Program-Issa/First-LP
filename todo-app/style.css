@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Image_fx.jpg'); /* 背景画像を設定 */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+  margin-bottom: 10px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(45deg, #ff0080, #7928ca);
+  padding: 10px 15px;
+  margin: 15px auto;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  max-width: 90%;
+  transition: transform 0.2s;
+}
+
+.link-button:hover {
+  transform: scale(1.05);
+}
+
+.link-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.link-button i {
+  font-size: 24px;
+}
+
+.link-button span {
+  font-weight: bold;
+  font-size: 18px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* ✅ レスポンシブ対応：スマホ（600px以下） */
+@media screen and (max-width: 600px) {
+  body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Image_fx (10).jpg'); /* 背景画像を設定 */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  text-align: center;
+}
+  
+  .container {
+    padding: 20px 15px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .link-button {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .link-button img,
+  .link-button i {
+    margin-bottom: 5px;
+  }
+
+  .link-button span {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* ✅ レスポンシブ対応：タブレット（900px以下） */
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .link-button span {
+    font-size: 17px;
+  }
+}
+
+.official-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(45deg, #00c300, #00b800);
+  padding: 10px 15px;
+  margin: 15px auto;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  max-width: 90%;
+  transition: transform 0.2s;
+}
+
+.official-line:hover {
+  transform: scale(1.05);
+}
+
+.official-line img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;      /* 完全に丸く切る */
+  object-fit: cover;       /* 拡大して切り取り */
+ 
+}
+.official-line i {
+  font-size: 24px;
+  text-align: left;
+}
+
+.official-line span {
+  font-weight: bold;
+  font-size: 18px;
+  flex-grow: 1;
+  text-align: left;
+}
