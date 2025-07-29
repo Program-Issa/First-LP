@@ -13,3 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach(section => observer.observe(section));
 });
+
+function toggleMenu() {
+  const nav = document.querySelector('.nav-links');
+  nav.classList.toggle('active');
+}
